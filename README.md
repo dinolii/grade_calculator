@@ -1,4 +1,6 @@
 # grade_calculator
++ https://polar-spire-54275.herokuapp.com/
+
 + A super simple static web page used to calculate the current score of the course by entering the weight & grade of assignment and tests
 
 + Also can be used to calcuate the required mark for any particular grade based on the current grade
