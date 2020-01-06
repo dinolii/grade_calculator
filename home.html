@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grade Estimator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <h1 class="text-primary">
+  	Grade Estimator
+  </h1>
+  <body>
+    <div id="gradeInput">	
+    	<input id = "gradeWeight" type="text" name="weight" placeholder = "Weight in Percent(%)">
+    	<input id = "gradePercent" type="text" name="grade" placeholder = "Grade">
+    	<button id = "addButton" class="btn btn-info">
+    		add
+    	</button>
+    </div>
+
+    <div id = "submitGrade">
+    	<input id = "expectedGrade" type="text" name="expectedGrader" placeholder = "Expected Grade">
+    <button id="submitButton" class="btn btn-primary">
+    		submit
+    	</button>
+    </div>
+    <div id = "gradeDisplay"> 
+    	<h1 class="text-primary">
+    		Your Grade So Far
+    	</h1>
+    	<ul id = "gradeList" class="list-group">
+    		
+    	</ul>
+    	<button id="clearButton" class="btn btn-primary"> Clear</button>
+    </div>
+    <div id = "showGrade">
+    	
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src=index.js></script>
+  </body>
+</html>
