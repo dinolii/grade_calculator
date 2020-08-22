@@ -1,5 +1,5 @@
 # grade_calculator
-+ https://polar-spire-54275.herokuapp.com/
+https://utgrade-calculator.herokuapp.com/
 
 + A super simple static web page used to calculate the current score of the course by entering the weight & grade of assignment and tests
 
