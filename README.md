@@ -10,8 +10,11 @@ https://utgrade-calculator.herokuapp.com/
 
 ![sample1](./sample1.png)
 
++ By click delete button after each grade you can remove it from the list, and the mark will be automatically updated
+![sample2](./sample2.png)
+
 + By entering expected grade(can be either number like 1-100 or letter grade like A, A- etc) and click submit button the required grade for the grade will be calculated and displayed
 
-![sample2](./sample2.png)
+![sample3](./sample3.png)
 
 + The clear button is used to erase all the grades that have been entered
