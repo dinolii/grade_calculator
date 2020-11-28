@@ -112,10 +112,8 @@ function calculateGrade(){
 }
 function clearGrade(){
 	weightGrades = [];
-	if (showGrade.childNodes.length > 1){
-		showGrade.removeChild(showGrade.childNodes[1])
-	}
-	$("#gradeList").empty()
+	$("#showGrade").empty();
+	$("#gradeList").empty();
 }
 
 addButton.addEventListener("click", addPortion);
