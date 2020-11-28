@@ -37,11 +37,13 @@ function addPortion(){
 			gradeList.removeChild(parentElement);
 			const deductGrade = val * (percent / 100);
 			let newGrade = showGrade.firstElementChild.innerText.split(' ');
-			newGrade = parseFloat(newGrade[newGrade.length-1]);
+			let floats = newGrade.filter((x) => (! isNaN(x)));
+			newGrade = parseFloat(floats[0]);
 			newGrade -= deductGrade;
+			let newWeight = parseFloat(floats[1]) - percent;
 			let newHead = document.createElement('h1');
 			newHead.className = "text-info";
-			const format = `Current Grade is ${newGrade.toFixed(2)}`;
+			const format = `Current Grade is ${newGrade.toFixed(2)} Total Weight is ${newWeight.toFixed(2)}`;
 			newHead.appendChild(document.createTextNode(format));
 			const mapList = weightGrades.map((x) => x.every(function(element, index) {
 				return element === [percent / 100, val][index];
@@ -59,9 +61,10 @@ function addPortion(){
 		const temp = [parseFloat(weight) / 100, parseFloat(grade)];
 		weightGrades.push(temp);
 		const currentGrade = weightGrades.reduce((acc, sublist) => acc + (sublist[0] * sublist[1]), 0);
+		const currentWeight = weightGrades.reduce((acc, sublist) => acc + (sublist[0] * 100), 0);
 		const h1 = document.createElement("h1");
 		h1.className = "text-info";
-		const format = `Current Grade is ${currentGrade.toFixed(2)}`;
+		const format = `Current Grade is ${currentGrade.toFixed(2)} Total Weight is ${currentWeight.toFixed(2)}`;
 		h1.appendChild(document.createTextNode(format));
 		if(showGrade.firstElementChild){
 			showGrade.replaceChild(h1, showGrade.firstElementChild)
